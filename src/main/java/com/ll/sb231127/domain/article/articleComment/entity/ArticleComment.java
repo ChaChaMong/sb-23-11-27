@@ -1,4 +1,4 @@
-package com.ll.sb231127.domain.article.articleComment;
+package com.ll.sb231127.domain.article.articleComment.entity;
 
 import com.ll.sb231127.domain.article.article.entity.Article;
 import com.ll.sb231127.domain.member.member.entity.Member;
