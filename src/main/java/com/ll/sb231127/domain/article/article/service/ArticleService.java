@@ -6,6 +6,8 @@ import com.ll.sb231127.domain.article.articleComment.entity.ArticleComment;
 import com.ll.sb231127.domain.member.member.entity.Member;
 import com.ll.sb231127.global.rsData.RsData;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -50,5 +52,9 @@ public class ArticleService {
 
     public List<Article> findAll() {
         return articleRepository.findByOrderByIdDesc();
+    }
+
+    public Page<Article> search(Pageable pageable) {
+        return articleRepository.findAll(pageable);
     }
 }
