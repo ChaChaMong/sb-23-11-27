@@ -49,6 +49,6 @@ public class NotProd {
         Article article1 = articleService.findById(1L).get();
 
         article1.addComment(member1, "댓글1");
-        article1.addComment(member1, "댓글1");
+        article1.addComment(member1, "댓글2");
     }
 }
